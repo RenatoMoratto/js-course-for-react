@@ -8,8 +8,8 @@ import PlayerName from './src/components/PlayerName';
 
 const $root = document.querySelector("#root");
 const $htmlBoardGame = BoardGame(6);
-const $hmtlPlayerName = PlayerName(1) + PlayerName(2);
+// const $hmtlPlayerName = PlayerName(1) + PlayerName(2);
 
-$root.insertAdjacentHTML('beforebegin', $hmtlPlayerName);
+// $root.insertAdjacentHTML('beforebegin', $hmtlPlayerName);
 $root.insertAdjacentHTML('beforeend', $htmlBoardGame);
 
