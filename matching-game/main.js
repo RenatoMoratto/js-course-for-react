@@ -4,15 +4,14 @@ import './src/styles/elements/base.css';
 import './style.css';
 
 import BoardGame from './src/object/BoardGame';
-import PlayerName from './src/components/PlayerName';
+import ScoreBoard from './src/object/ScoreBoard';
 
 const $root = document.querySelector("#root");
 
 $root.insertAdjacentHTML(
     'beforebegin', 
     `
-        ${PlayerName('Player1')}
-        ${PlayerName('Player2')}
+        ${ScoreBoard()}
         ${BoardGame(6)}
     `
 );
