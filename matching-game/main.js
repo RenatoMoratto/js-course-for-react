@@ -3,15 +3,15 @@ import './src/styles/generic/reset.css';
 import './src/styles/elements/base.css';
 import './style.css';
 
-import BoardGame from './src/object/BoardGame';
 import ScoreBoard from './src/object/ScoreBoard';
+import BoardGame from './src/object/BoardGame';
 
-const $root = document.querySelector("#root");
+const $root = document.querySelector('#root');
 
 $root.insertAdjacentHTML(
-    'beforebegin', 
-    `
+  'beforebegin',
+  `
         ${ScoreBoard()}
-        ${BoardGame(6)}
+        ${BoardGame(2)}
     `
 );
